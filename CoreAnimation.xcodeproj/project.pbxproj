@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F84117E82123D73A00F883CE /* TransFormVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F84117E72123D73A00F883CE /* TransFormVC.m */; };
+		F84117EC2123D76D00F883CE /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F84117EB2123D76D00F883CE /* BaseVC.m */; };
+		F84117EF2123D80100F883CE /* NumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84117EE2123D80100F883CE /* NumberView.m */; };
 		F8C7943F2122C872003BC138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C7943E2122C872003BC138 /* AppDelegate.m */; };
 		F8C794422122C872003BC138 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C794412122C872003BC138 /* ViewController.m */; };
 		F8C794452122C872003BC138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C794432122C872003BC138 /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F84117E62123D73A00F883CE /* TransFormVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransFormVC.h; sourceTree = "<group>"; };
+		F84117E72123D73A00F883CE /* TransFormVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransFormVC.m; sourceTree = "<group>"; };
+		F84117EA2123D76D00F883CE /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		F84117EB2123D76D00F883CE /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		F84117ED2123D80100F883CE /* NumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberView.h; sourceTree = "<group>"; };
+		F84117EE2123D80100F883CE /* NumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberView.m; sourceTree = "<group>"; };
 		F8C7943A2122C872003BC138 /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C7943D2122C872003BC138 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8C7943E2122C872003BC138 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +48,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F84117E52123D72C00F883CE /* TransForm */ = {
+			isa = PBXGroup;
+			children = (
+				F84117E62123D73A00F883CE /* TransFormVC.h */,
+				F84117E72123D73A00F883CE /* TransFormVC.m */,
+				F84117F02123D80A00F883CE /* view */,
+			);
+			path = TransForm;
+			sourceTree = "<group>";
+		};
+		F84117E92123D75900F883CE /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				F84117EA2123D76D00F883CE /* BaseVC.h */,
+				F84117EB2123D76D00F883CE /* BaseVC.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		F84117F02123D80A00F883CE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F84117ED2123D80100F883CE /* NumberView.h */,
+				F84117EE2123D80100F883CE /* NumberView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		F8C794312122C872003BC138 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +99,8 @@
 				F8C7943E2122C872003BC138 /* AppDelegate.m */,
 				F8C794402122C872003BC138 /* ViewController.h */,
 				F8C794412122C872003BC138 /* ViewController.m */,
+				F84117E92123D75900F883CE /* BaseVC */,
+				F84117E52123D72C00F883CE /* TransForm */,
 				F8C794432122C872003BC138 /* Main.storyboard */,
 				F8C794462122C873003BC138 /* Assets.xcassets */,
 				F8C794482122C873003BC138 /* LaunchScreen.storyboard */,
@@ -142,8 +181,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C794422122C872003BC138 /* ViewController.m in Sources */,
+				F84117E82123D73A00F883CE /* TransFormVC.m in Sources */,
 				F8C7944D2122C874003BC138 /* main.m in Sources */,
+				F84117EC2123D76D00F883CE /* BaseVC.m in Sources */,
 				F8C7943F2122C872003BC138 /* AppDelegate.m in Sources */,
+				F84117EF2123D80100F883CE /* NumberView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

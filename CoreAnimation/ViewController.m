@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "TransFormVC.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong)UITableView *tableview;
 @end
@@ -35,6 +35,13 @@
     }
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        TransFormVC *vc = [TransFormVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
+#pragma mark - lazy init
 - (UITableView *)tableview{
     if (!_tableview) {
         _tableview = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
